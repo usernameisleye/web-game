@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+main{
+    background-color: gainsboro;
+    position: relative;
+    border: #000 1px solid;
+    height: 100%;
+}
+.character{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 5%;
+    height: 10%;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.animate{
+    animation: jump .7s linear;
+}
+@keyframes jump {
+    0%{
+        top: 55%;
+    }
+    50%{
+        top: 35%;
+    }
+    100%{
+        top: 55%;
+    }
+}
+
+.floor{
+    position: absolute;
+    top: 65%;
+    background-color: #000;
+    width: 100%;
+    height: 0.5%;
+}
+.obstacle{
+    position: absolute;
+    top: 59%;
+    right: 0;
+    width: 3%;
+    height: 6%;
+    background-color: bisque;
+    animation: slide 3s infinite linear;
+}
+@keyframes slide {
+    0%{
+        right: 0;
+    }
+    50%{
+        right: 50%;
+    }
+    100%{
+        right: 100%;
+    }
+}
