@@ -52,6 +52,24 @@ main{
     background-color: bisque;
     animation: slide 3s infinite linear;
 }
+.obstacle{
+    position: absolute;
+    top: 59%;
+    right: 0;
+    width: 3%;
+    height: 6%;
+    background-color: blue;
+    animation: slide 3s infinite linear;
+}
+.obstacle-2{
+    position: absolute;
+    top: 59%;
+    right: 9%;
+    width: 3%;
+    height: 6%;
+    background-color: red;
+    animation: slide 3s infinite linear;
+}
 @keyframes slide {
     0%{
         right: 0;
