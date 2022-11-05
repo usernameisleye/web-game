@@ -61,18 +61,32 @@ main{
     background-color: blue;
     animation: slide 3s infinite linear;
 }
-.obstacle-2{
+
+.secondObstacle{
     position: absolute;
     top: 59%;
-    right: 9%;
+    right: 0%;
     width: 3%;
     height: 6%;
-    background-color: red;
-    animation: slide 3s infinite linear;
+    background-color: green;
+    animation: secondSlide 3s infinite linear;
 }
+
 @keyframes slide {
     0%{
         right: 0;
+    }
+    50%{
+        right: 50%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes secondSlide {
+    0%{
+        right: 10%;
     }
     50%{
         right: 50%;
