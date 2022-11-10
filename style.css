@@ -22,7 +22,7 @@ main{
     border-radius: 50%;
 }
 .animate{
-    animation: jump .7s linear;
+    animation: jump .6s linear;
 }
 @keyframes jump {
     0%{
@@ -45,29 +45,20 @@ main{
 }
 .obstacle{
     position: absolute;
-    top: 59%;
+    top: 57%;
     right: 0;
     width: 3%;
-    height: 6%;
-    background-color: bisque;
-    animation: slide 3s infinite linear;
-}
-.obstacle{
-    position: absolute;
-    top: 59%;
-    right: 0;
-    width: 3%;
-    height: 6%;
+    height: 8%;
     background-color: blue;
-    animation: slide 3s infinite linear;
+    animation: slide 3s -20s infinite linear;
 }
 
 .secondObstacle{
     position: absolute;
-    top: 59%;
+    top: 57%;
     right: 0%;
     width: 3%;
-    height: 6%;
+    height: 8%;
     background-color: green;
     animation: secondSlide 3s infinite linear;
 }
@@ -86,12 +77,12 @@ main{
 
 @keyframes secondSlide {
     0%{
-        right: 10%;
+        right: 0%;
     }
     50%{
-        right: 50%;
+        right: 60%;
     }
     100%{
-        right: 100%;
+        right: 120%;
     }
 }
