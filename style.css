@@ -5,6 +5,7 @@
 }
 body{
     height: 100vh;
+
 }
 main{
     background-color: gainsboro;
@@ -14,52 +15,49 @@ main{
 }
 .character{
     position: absolute;
-    top: 55%;
-    left: 5%;
-    width: 5%;
-    height: 10%;
+    top: 17rem;
+    left: 3rem;
+    width: 4rem;
+    height: 8rem;
     background-color: blueviolet;
-    border-radius: 50%;
 }
 .animate{
     animation: jump .6s linear;
 }
 @keyframes jump {
     0%{
-        top: 55%;
+        top: 17rem;
     }
     50%{
-        top: 35%;
+        top: 7rem;
     }
     100%{
-        top: 55%;
+        top: 17rem;
     }
 }
 
 .floor{
     position: absolute;
-    top: 65%;
+    top: 25rem;
     background-color: #000;
     width: 100%;
     height: 0.5%;
 }
 .obstacle{
     position: absolute;
-    top: 57%;
+    top: 21rem;
     right: 0;
-    width: 3%;
-    height: 8%;
-    background-color: blue;
+    width: 3rem;
+    height: 4rem;
+}
+
+.firstObstacle{
+    background-color: red;
     animation: slide 3s -20s infinite linear;
 }
 
 .secondObstacle{
-    position: absolute;
-    top: 57%;
-    right: 0%;
-    width: 3%;
-    height: 8%;
-    background-color: green;
+    background-color: blue;
     animation: secondSlide 3s infinite linear;
 }
 
