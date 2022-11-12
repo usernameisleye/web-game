@@ -11,7 +11,7 @@ document.addEventListener('keydown', e =>{
 const checkGame = setInterval(() =>{
     const charCheck = parseInt(window.getComputedStyle(char).getPropertyValue('top'));
     const obsCheck = parseInt(window.getComputedStyle(obs && obs1).getPropertyValue('left'));
-
+})
 //     if(obsCheck > 6 && obsCheck < 8 && charCheck >= 8){
 //         obs.style.animation = 'none';
 //         obs.style.display = 'none';
